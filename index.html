@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+
+            text-align: center;
+        }
+
+        #main{
+            background-image: url("images/flowers.png");
+            background-size:cover;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        #title{
+            text-align: center;
+            font-size: 44px;
+            color: ghostwhite;
+            font-family: 'Sigmar One', cursive;
+        }
+
+        #sub-title{
+            font-size: 25px;
+            color: ghostwhite;
+        }
+
+        p {
+            font-weight: 900;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        #img-caption{
+            font-weight: 900;
+            color: ghostwhite;
+        }
+
+        img {
+            /*responsive image*/
+            max-width: 100%;
+            height: auto;
+        }
+
+        #title-2{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #tribute-info{
+            text-align: left;
+           /*background:#fdfff7;*/
+            background-color:rgba(255, 255, 255, 1);
+            padding: 10px 30px 10px 30px;
+        }
+
+        #wiki-button{
+            background-color: #97e8ff;
+            border-radius: 15px;
+            padding: 5px 5px 5px 5px;
+
+        }
+
+        #image{
+            /*how to center an image*/
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /*half size for Retina*/
+            width: 50%;
+            /*animation up-down*/
+            animation-name: image-1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+
+        @keyframes image-1 {
+            0%{top:0;}
+            100% {top:13px;}
+        }
+
+    </style>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Tribute Page</title>
+    </head>
+    <body>
+      <main id="main">
+          <div id="title-and-sub">
+              <h1 id="title">Ooh, who lives in a pineapple under the sea?</h1>
+              <h2 id="sub-title">The most famous sponge!</h2>
+          </div>
+          <figure id="img-div">
+              <img id="image" src="images/logo.png" alt="logo-image">
+              <figcaption id="img-caption">This is the original Nickelodeon logo of the television series.</figcaption>
+          </figure>
+          <section id="tribute-info">
+              <div id="tribute-text">
+                 <h2 id="title-2">Small introduction</h2>
+                  <p id="pr-1">
+                      SpongeBob SquarePants (also simply referred to as SpongeBob) is an american animated comedy television series created by marine science educator and animator Stephen Hillenburg for Nickelodeon. The series chronicles the adventures of the title character and his aquatic friends in the fictional underwater city of Bikini Bottom. The fifth-longest-running American animated series, its popularity has made it a media franchise. It is the highest rated series to air on Nickelodeon as well as the most profitable property for ViacomCBS Consumer Products, having generated over $13 billion in merchandising revenue as of 2019.
+                  </p>
+                  <p id="pr-2">
+                      Many of the series' ideas originated in The Intertidal Zone, an unpublished educational book that Hillenburg created in 1989 to teach his students about undersea life.[5] He began developing SpongeBob SquarePants into a television series in 1996. When he pitched the series to Nickelodeon, the network's executives wanted SpongeBob to be a child in school, but Hillenburg preferred SpongeBob to be an adult character.[6] He was prepared to "walk out" on Nickelodeon and abandon the series, but he compromised by creating Mrs. Puff and her boating school, so that SpongeBob could attend school as an adult.
+                  </p>
+                  <p id="pr-3">
+                      SpongeBob SquarePants has won a variety of awards including six Annie Awards, eight Golden Reel Awards, four Emmy Awards, 18 Kids' Choice Awards, and two BAFTA Children's Awards. A Broadway musical based on the series opened in 2017 to critical acclaim.
+                  </p>
+                  <h3 id="link-text">
+                      If you have time, you should read more about this incredible sponge on his
+                      <a id="wiki-button" href="https://en.wikipedia.org/wiki/SpongeBob_SquarePants" target="_blank">Wikipedia entry</a>
+                  </h3>
+              </div>
+          </section>
+      </main>
+
+    </body>
+</html>
